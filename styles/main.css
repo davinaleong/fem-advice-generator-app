@@ -71,7 +71,7 @@ body {
 }
 
 .flow * + * {
-  margin-top: var(--flow-spacer, 1.2em);
+  margin-top: var(--flow-spacer, 0.5em);
 }
 
 /** Content - Advice Dialogue **/
