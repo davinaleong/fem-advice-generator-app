@@ -70,29 +70,34 @@ body {
   padding: var(--size-400);
 }
 
-main {
-  width: clamp(18rem, 1rem + 37vw, 48rem);
-  padding: var(--size-600);
-  display: grid;
-  gap: var(--size-400);
-  border-radius: var(--size-400);
-}
-
 .flow * + * {
   margin-top: var(--flow-spacer, 1.2em);
 }
 
 /** Content - Advice Dialogue **/
-.advice-heading {
+button {
+  cursor: pointer;
+}
+
+.dialogue {
+  position: relative;
+  width: clamp(18rem, 1rem + 37vw, 48rem);
+  padding: var(--size-600) var(--size-600) var(--size-800) var(--size-600);
+  display: grid;
+  gap: var(--size-400);
+  border-radius: var(--size-400);
+}
+
+.dialogue-heading {
   letter-spacing: 0.3em;
 }
 
-.advice-content {
+.dialogue-content {
   max-width: 30ch;
   margin-inline: auto;
 }
 
-.divider {
+.dialogue-divider {
   display: block;
   height: 16px;
   background-color: transparent;
@@ -102,9 +107,31 @@ main {
 }
 
 @media (min-width: 48em) {
-  .divider {
+  .dialogue-divider {
     background-image: url(./../images/pattern-divider-desktop.svg);
   }
+}
+
+.dialogue-button {
+  --size: 4em;
+  width: var(--size);
+  height: var(--size);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-900);
+  border-radius: 100vmax;
+  border: none;
+  transition: box-shadow 0.3s ease-in-out;
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--size) * -1);
+  transform: translate(-50%, -50%);
+}
+
+.dialogue-button:where(:hover, :focus, :focus-visible) {
+  box-shadow: 0 0 2em 0 rgba(82, 255, 168, 0.8);
 }
 /** Content **/
 
