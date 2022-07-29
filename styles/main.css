@@ -2,7 +2,7 @@
     - Root
     - Content
       - Content - General Styling
-      - Content - Form Inputs
+      - Content - Advice Dialogue
     - Utility
       - Utility - Colours
       - Utility - Background Colours
@@ -80,6 +80,11 @@ main {
 
 .flow * + * {
   margin-top: var(--flow-spacer, 1.2em);
+}
+
+/** Content - Advice Dialogue **/
+.advice-heading {
+  letter-spacing: 0.3em;
 }
 /** Content **/
 
