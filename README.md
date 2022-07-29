@@ -4,7 +4,7 @@ Another simple challenge from Frontend Mentor.
 
 The challenge can be found [here](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub/advice-generator-app-txFOJg1v8h).
 
-Demo page coming soon!
+Demo page [here](https://davinaleong.github.io/fem-advice-generator-app/)!
 
 ## Getting Started
 
