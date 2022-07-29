@@ -86,6 +86,26 @@ main {
 .advice-heading {
   letter-spacing: 0.3em;
 }
+
+.advice-content {
+  max-width: 30ch;
+  margin-inline: auto;
+}
+
+.divider {
+  display: block;
+  height: 16px;
+  background-color: transparent;
+  background-image: url(./../images/pattern-divider-mobile.svg);
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width: 48em) {
+  .divider {
+    background-image: url(./../images/pattern-divider-desktop.svg);
+  }
+}
 /** Content **/
 
 /** Utility **/
