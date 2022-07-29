@@ -23,12 +23,11 @@
   --clr-neutral-400: hsl(217, 19%, 24%);
   --clr-neutral-900: hsl(218, 23%, 16%);
 
-  --ff-primary: "Outfit", Arial, sans-serif;
+  --ff-primary: "Manrope", Arial, sans-serif;
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
 
-  --fw-regular: 500;
-  --fw-bold: 700;
+  --fw-regular: 800;
 
   --fs-base: 16px;
   --fs-100: 0.6rem;
@@ -61,6 +60,7 @@
 body {
   font-size: var(--fs-base);
   font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
   width: 100vw;
   min-height: 100vh;
   display: grid;
@@ -71,7 +71,11 @@ body {
 }
 
 main {
-  max-width: 20rem;
+  width: clamp(18rem, 1rem + 37vw, 48rem);
+  padding: var(--size-600);
+  display: grid;
+  gap: var(--size-400);
+  border-radius: var(--size-400);
 }
 
 .flow * + * {
@@ -186,6 +190,20 @@ main {
 }
 .fs-button {
   font-size: var(--ff-button);
+}
+
+/** Utility - Text Transforms **/
+.tt-none {
+  text-transform: none;
+}
+.tt-uppercase {
+  text-transform: uppercase;
+}
+.tt-lowercase {
+  text-transform: lowercase;
+}
+.tt-capitalize {
+  text-transform: capitalize;
 }
 
 /** Utility - Spacing **/
